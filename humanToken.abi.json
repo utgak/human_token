@@ -1,0 +1,106 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "createHuman",
+			"inputs": [
+				{"name":"name","type":"string"},
+				{"name":"sex","type":"string"},
+				{"name":"specialization","type":"string"},
+				{"name":"age","type":"uint8"},
+				{"name":"weight","type":"uint8"},
+				{"name":"height","type":"uint8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getHumanOwner",
+			"inputs": [
+				{"name":"humanId","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "getHumanPrice",
+			"inputs": [
+				{"name":"humanId","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "getTokenInfo",
+			"inputs": [
+				{"name":"humanId","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"humanName","type":"string"},
+				{"name":"humanSex","type":"string"},
+				{"name":"humanSpecialization","type":"string"},
+				{"name":"humanAge","type":"uint8"},
+				{"name":"humanHeight","type":"uint8"},
+				{"name":"humanWeight","type":"uint8"}
+			]
+		},
+		{
+			"name": "changeOwner",
+			"inputs": [
+				{"name":"humanId","type":"uint256"},
+				{"name":"pubKeyOfNewOwner","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setHumanPrice",
+			"inputs": [
+				{"name":"humanId","type":"uint256"},
+				{"name":"price","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "timestamp",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"timestamp","type":"uint32"}
+			]
+		},
+		{
+			"name": "humanToOwner",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"humanToOwner","type":"map(uint256,uint256)"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"timestamp","type":"uint32"},
+		{"components":[{"name":"name","type":"string"},{"name":"sex","type":"string"},{"name":"specialization","type":"string"},{"name":"age","type":"uint8"},{"name":"weight","type":"uint8"},{"name":"height","type":"uint8"}],"name":"humansArr","type":"tuple[]"},
+		{"name":"humanToOwner","type":"map(uint256,uint256)"},
+		{"name":"humanToPrice","type":"map(uint256,uint256)"}
+	]
+}
