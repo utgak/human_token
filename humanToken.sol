@@ -14,7 +14,7 @@ contract humanToken {
     }
 
     Human[] humansArr;
-    mapping (uint => uint) public humanToOwner;
+    mapping (uint => uint) humanToOwner;
     mapping (uint => uint) humanToPrice;
 
     modifier accept() {

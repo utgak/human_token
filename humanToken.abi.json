@@ -80,14 +80,6 @@
 			"outputs": [
 				{"name":"timestamp","type":"uint32"}
 			]
-		},
-		{
-			"name": "humanToOwner",
-			"inputs": [
-			],
-			"outputs": [
-				{"name":"humanToOwner","type":"map(uint256,uint256)"}
-			]
 		}
 	],
 	"data": [
